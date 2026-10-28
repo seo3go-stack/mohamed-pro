@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>محمد برو</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E8EDF1; --key:#FFFFFF; --edge:#AEB9C4; --ink:#121A24; --muted:#56636F;
+  --accent:#0A7C86; --on-accent:#FFFFFF; --accent-edge:#065961;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#10161C; --key:#1D2630; --edge:#05080B; --ink:#EDF2F6; --muted:#9AA7B3;
+    --accent:#2BB3BF; --on-accent:#06191C; --accent-edge:#12727B;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10161C; --key:#1D2630; --edge:#05080B; --ink:#EDF2F6; --muted:#9AA7B3;
+  --accent:#2BB3BF; --on-accent:#06191C; --accent-edge:#12727B;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+  font-family:"Readex Pro",Tahoma,"Segoe UI",Arial,sans-serif; line-height:1.6;
+  display:flex; justify-content:center; padding:48px 20px 40px;
+}
+main{width:100%; max-width:420px}
+h1{font-size:2.4rem; line-height:1.15; margin:0 0 6px; font-weight:700; letter-spacing:0}
+.sub{margin:0 0 36px; color:var(--muted); font-size:1rem}
+ul{list-style:none; margin:0; padding:0; display:grid; gap:16px}
+a.key{
+  display:flex; align-items:center; gap:16px; text-decoration:none; color:var(--ink);
+  background:var(--key); border-radius:14px; padding:16px 18px;
+  box-shadow:0 5px 0 var(--edge); transform:translateY(0);
+  transition:transform .08s ease, box-shadow .08s ease;
+}
+a.key:active{transform:translateY(4px); box-shadow:0 1px 0 var(--edge)}
+a.key:focus-visible{outline:3px solid var(--accent); outline-offset:4px}
+a.key.primary{background:var(--accent); color:var(--on-accent); box-shadow:0 5px 0 var(--accent-edge)}
+a.key.primary:active{box-shadow:0 1px 0 var(--accent-edge)}
+.ico{
+  flex:none; width:44px; height:44px; border-radius:10px; display:grid; place-items:center;
+  background:var(--bg); color:var(--ink); font-weight:700; font-size:1.35rem;
+}
+.primary .ico{background:rgba(255,255,255,.2); color:var(--on-accent)}
+.ico svg{width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+.txt{display:flex; flex-direction:column; min-width:0}
+.txt b{font-size:1.08rem; font-weight:600}
+.txt span{font-size:.88rem; opacity:.75; overflow-wrap:anywhere}
+@media (prefers-reduced-motion:reduce){a.key{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <h1>محمد برو</h1>
+  <p class="sub">كلمنا أو تابعنا من أي مكان.</p>
+  <ul>
+    <li>
+      <a class="key primary" href="https://wa.me/message/4MEFCTOFHS7XJ1" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5.2A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 8.5c.3 3 2.5 5.2 5.5 6l1.2-1.4-2-1-.8.7c-.8-.4-1.5-1.1-1.9-1.9l.7-.8-1-2z"/></svg></span>
+        <span class="txt"><b>واتساب</b><span>ابعتلنا رسالة</span></span>
+      </a>
+    </li>
+    <li>
+      <a class="key" href="https://maps.app.goo.gl/qtqbie8BCz3rcWR18" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
+        <span class="txt"><b>جوجل ماب</b><span>العنوان والتقييمات</span></span>
+      </a>
+    </li>
+    <li>
+      <a class="key" href="https://www.facebook.com/share/1EscuUoQkR/" target="_blank" rel="noopener">
+        <span class="ico" aria-hidden="true">f</span>
+        <span class="txt"><b>فيسبوك</b><span>صفحتنا على فيسبوك</span></span>
+      </a>
+    </li>
+    <li>
+      <a class="key" href="https://www.tiktok.com/@mohamed._.pro._.1" target="_blank" rel="noopener">
+        <span class="ico" aria-hidden="true">♪</span>
+        <span class="txt"><b>تيك توك</b><span dir="ltr">@mohamed._.pro._.1</span></span>
+      </a>
+    </li>
+  </ul>
+</main>
+</body>
+</html>
